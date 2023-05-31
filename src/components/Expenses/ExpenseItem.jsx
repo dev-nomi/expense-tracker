@@ -1,7 +1,7 @@
-import Card from "./Card";
+import Card from "../UI/Card";
 import ExpenseDate from "./ExpenseDate";
 
-function ExpenseItem({ title, amount, date }) {
+const ExpenseItem = ({ title, amount, date }) => {
   return (
     <Card className="md:flex text-center justify-between items-center p-3 my-4 mx-4 bg-cyan-700 text-white">
       <div className="md:flex md:justify-center md:items-center md:gap-4">
@@ -13,6 +13,6 @@ function ExpenseItem({ title, amount, date }) {
       </div>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
